@@ -21,22 +21,151 @@
             width: 350px;
             margin: auto;
         }
+        h1 {
+            background-color: pink;
+            color: white;
+
+            padding: 16px;
+            font-weight: 500;
+        }
+        .pic {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .pic > h2 {
+            color: pink;
+            letter-spacing: 3px;
+        }
+        .pic > img {
+            width: 250px;
+            border: 3px solid pink;
+        }
+        .pic > span {
+            color: pink;
+            letter-spacing: 3px;
+        }   
+
+
+        .name {
+            color: pink;
+            font-size: 24px;
+            font-weight: 500;
+
+            border-top: 1px solid pink;
+            border-bottom: 1px solid pink;
+
+            width: 200px;
+            margin: 30px auto 30px auto;
+
+            text-align: center;
+        }
+
+
+        .main {
+            background-color: pink;
+            color: white;
+            padding: 20px;
+        }
+        .inv {
+            font-size: 20px;
+            text-align: center;
+        }
+        .msg {
+            color: papayawhip;
+            line-height: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .place {
+            text-align: center;
+        }
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .bottom > p {
+            color: pink;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .bottom > input {
+            width: 250px;
+            margin-bottom: 10px;
+            
+            background-color: pink;
+
+            border: none;
+            border-radius: 3px;
+        }
+        .bottom > textarea {
+            color: white;
+            width: 250px;
+            height: 100px;
+            margin-bottom: 10px;
+
+            background-color: pink;
+
+            border: none;
+            border-radius: 3px;
+        }
+        .bottom > button {
+            width: 150px;
+            height: 40px;
+
+            background-color: pink;
+            color: white;
+            
+            border: none;
+            border-radius: 3px;
+        }
     </style>
 </head>
 <body>
     <div class="wrap">
         <h1>영희와 철수의 첫 시작을 축하해주세요</h1>
         <div class="pic">
-            여기에 내용을 입력
+            <h2>Save The Date</h2>
+            <img src="wedding.png">
+            <span>12.31.Sunday.PM.12:30</span>
         </div>
         <div class="name">
-            여기에 내용을 입력
+            김영희 & 이철수
         </div>
         <div class="main">
-            여기에 내용을 입력
+            <p class="inv">INVITATION</p>
+            <p class="msg">
+                서로 다른 두사람이 만나
+                <br>
+                사랑으로 하나 되는 자리에
+                <br>
+                소중한 여러분들을 초대합니다.
+                <br>
+                기쁠 때나, 슬플 때나
+                <br>
+                행복의 계단을 쌓아가겠습니다.
+                <br>
+                저희의 첫 시작을 함께 해주신다면
+                <br>
+                감사한 마음 깊이 간직하며 잘 살겠습니다.
+            </p>
+            <p class="place">
+                2023. 12. 31. Sunday. PM 12:30
+                <br>
+                Spartan Wedding
+            </p>
         </div>
         <div class="bottom">
-            여기에 내용을 입력
+            <p>축하메시지를 남겨주세요</p>
+            <input type="text" placeholder="이름">
+            <textarea placeholder="메시지를 남겨주세요"></textarea>
+            <button>메시지 남기기</button>
         </div>
     </div>
 </body>
